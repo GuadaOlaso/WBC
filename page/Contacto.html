@@ -29,56 +29,67 @@
                     <a href="Contacto.html">Contacto</a>
                 </li>
             </ul>
-        </nav>
+        </nav> 
 </header>
 <main>
-    <h1>Dejanos tu Mensaje</h1>
+    <h1>Hace tu Pedido</h1>
+
     <form action="form.php" method="post">
-        <label class="contacto" for="">Nombre y Apellido</label>
-        <input class="contacto" type="text" name="Nombre y Apellido" id="Nombre y Apellido" placeholder="Luz Gomez">
-        <label class="contacto" for="">E-Mail</label>
-        <input class="contacto" type="email" name="Mail" id="Mail" placeholder="luzgomez@gmail.com">
-        <label class="contacto" for="">Telefono</label>
-        <input class="contacto" type="tel" name="Teléfono" id="Teléfono" placeholder="011 15 1111 1111">
-        <label class="contacto" for="">Producto</label>
-        <select class="contacto" name="" id="">Producto</select>
-            <option class="contacto" value="">Vela en Vaso de Vidrio</option>
-            <option class="contacto" value="">Vela en Vaso de Ceramica</option>
-            <option class="contacto" value="">Bombon Aromatico</option>
-            <option class="contacto" value="">Difusor de Ambiente</option>
-        <label class="contacto" for="">Aroma</label>
-        <select class="contacto" name="" id=""></select>
-            <option class="contacto" value="">#1 Coco y Vainilla</option>
-            <option class="contacto" value="">#2 Lavanda y Romero</option>
-            <option class="contacto" value="">#3 Jazmines y Nardos</option>
-            <option class="contacto" value="">#4 Flor de Azahar y Lirio</option>
-            <option class="contacto" value="">#5 Lima y Vainilla</option>
-        <label class="contacto" for="">Cantidad</label>
-        <input class="contacto" type="number" name="Cantidad" id="Cantiad" placeholder="1">
-        <textarea class="contacto" name="Mensaje" id="Mensaje" cols="30" rows="10">Mensaje</textarea>
-        <input class="boton" type="submit" value="Enviar">
+        <div class="Formulario">
+        <div class="Formulariodatos">
+            <label class="labelnombre" for="">Nombre y Apellido</label>
+                <input required class="imputnoombre" type="text" name="Nombre y Apellido" id="Nombre y Apellido" placeholder="Luz Gomez">
+            <label class="labelmail" for="">E-Mail</label>
+                <input required class="imputmail" type="email" name="Mail" id="Mail" placeholder="luzgomez@gmail.com">
+            <label class="labeltelefono" for="">Telefono</label>
+                <input required class="imputtelefono" type="tel" name="Teléfono" id="Teléfono" placeholder="011 15 1111 1111">
+        </div>     
+        <div class="Formulariopedido">   
+            <label class="labelproducto" for="">Producto</label>
+                <select required class="selectproducto" name="" id="">   
+                    <option value="vela vidrio">Vela en Vaso de Vidrio</option>
+                    <option value="vela ceramica">Vela en Vaso de Ceramica</option>
+                    <option value="bombon">Bombon Aromatico</option>
+                    <option value="difusor">Difusor de Ambiente</option>
+                </select>
+            <label class="labelaroma" for="">Aroma</label>
+                <select required class="selectaroma" name="" id="">
+                    <option value="1">#1 Coco y Vainilla</option>
+                    <option value="2">#2 Lavanda y Romero</option>
+                    <option value="3">#3 Jazmines y Nardos</option>
+                    <option value="4">#4 Flor de Azahar y Lirio</option>
+                    <option value="5">#5 Lima y Vainilla</option>
+                </select>
+            <label class="labelcantidad" for="">Cantidad</label>
+                <input required class="imputcantidad" type="number" name="Cantidad" id="Cantiad" placeholder="1">
+        </div>
+        </div> 
+        <div class="botonformulario">
+            <input class="boton" type="submit" value="Enviar">
+        </div>
+        </div>
     </form>
 </main>
 <footer>
     <h4>Contactanos</h4>
     <nav>
     <div class="iconosFooter">
-        <img src="../Media/instagram.png" alt="Instagram">
-        <img src="../Media/envelope.png" alt="Email">
-        <img src="../Media/phone-flip.png" alt="Teléfono">
-        <img src="../Media/marker.png" alt="Ubicación">
+        <img class="imginstagram" src="../Media/instagram.png" alt="Instagram">
+        <img class="imgmail" src="../Media/envelope.png" alt="Email">
+        <img class="imgtel" src="../Media/phone-flip.png" alt="Teléfono">
+        <img class="imggeo" src="../Media/marker.png" alt="Ubicación">
     </div>
     <ul class="ulFooter">
-        <li>
+        <li class="liinstagram">
             <a href="https://www.instagram.com/wild.blossom.candles/?hl=en">Wild Blossom</a>
         </li>
-        <li>
+        <li class="limail">
             <a href="mailto:hola@wildblossomcandles.com">hola@wildblossomcandles.com</a>
         </li>
-        <li>
+        <li class="litel">
             <a href="tel:+541128449457">(011) 15 2844 9457</a>
         </li>
-        <li>
+        <li class="ligeo">
             <a href="https://www.google.com/maps/place/Villa+Berna,+Cordoba/@-31.9142555,-64.7406333,15z/data=!3m1!4b1!4m6!3m5!1s0x95d2ca62efc6e437:0xef69decb8b3dc9cb!8m2!3d-31.9142564!4d-64.7303335!16s%2Fg%2F122hpky1">Villa Berna, Cordoba</a>
         </li>
     </ul>

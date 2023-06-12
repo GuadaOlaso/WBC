@@ -25,8 +25,6 @@ html {
 
 /*Estilo de Header*/
 
-
-
 header{
     background-color: #d6d5ca;
     font-size: 2rem;
@@ -48,6 +46,11 @@ header ul a {
     color: #404041;
     text-decoration: none;
 }
+
+header ul a:hover{
+    color: #5e5e5f;
+}
+
 header img{
     width: 70%;
     margin-top: 0%;
@@ -77,42 +80,60 @@ h3{
 }
 body p{
     font-size: 2.5rem;
+    text-align: center;
+    margin: 2%;
 }
 .imagenBody {
     max-height: 100%;
     max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-} 
-.nosotros{
-    display: flex;
-    flex-direction: row;
-    margin: 0%;
-    padding: 0%;
-    justify-content: space-evenly;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 2%;
 }
-.nosotros img {
-    width: 100%;
-    justify-content: space-evenly;
-    margin-bottom: 5%;
-}
-.nosotros h3 {
-    margin-bottom: 5%;
-    text-align: center;
-}
-.nosotros p{
-    text-align: justify;
-}
-.quienesSomos, .queHacemos, .porQueLoHacemos {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
+.valores {
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-template-rows: 70% 30%;
+    grid-template-areas: 
+    "imgsustentabilidad imgarmnia imgcalma"
+    "sustentabilidad armonia calma";
+    justify-items: center;
     align-items: center;
-    padding: 2%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.valores img {
+    width: 100%;
+    height: 100%;
 }
 
+.imgSustentabilidad {
+    grid-area: imgsustentabilidad;
+}
+.imgArmonia {
+    grid-area: imgarmonia;
+}
+.imgCalma {
+    grid-area: imgcalma;
+}
+.Sustentabilidad {
+    grid-area: sustentabilidad;
+}
+.Armonia {
+    grid-area: armonia;
+}
+.Calma {
+    grid-area: calma;
+}
 
 /*Estilo de Footer*/
+
+footer{
+    background-color: #C9A88A;
+    font-size: 2rem;    
+    margin-bottom: 0%;
+    bottom: 0;
+}
 
 footer ul {
     list-style-type: none;
@@ -121,8 +142,6 @@ footer ul a {
     color: #404041;
     text-decoration: none;
 }
-
-
 footer p{
     font-size: 2rem;
     text-align: center;
@@ -132,33 +151,55 @@ footer p{
     width: 15%;
 }
 .iconosFooter img{
-    width: 80%;
+    width: 15%;
 }
-footer{
-    background-color: #C9A88A;
-    font-size: 2rem;    
+footer nav {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 50px, 50px, 50px, 50px;
+    grid-template-areas: 
+    "imginstagram liinstagram"
+    "imgmail limail"
+    "imgtel litel"
+    "imggeo ligeo";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
-footer nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 25%;
-    margin-top: 2%;
-    margin-left: 1%;
+.imginstagram {
+    grid-area: imginstagram;
 }
-.iconosFooter {
-    width: 8%;
+.liinstagram {
+    grid-area: liinstagram;
 }
+.imgmail {
+    grid-area: imgmail;
+}
+.limail {
+    grid-area: limail;
+}
+.imgtel{
+    grid-area: imgtel;
+}
+.litel {
+    grid-area: litel;
+}
+.imggeo {
+    grid-area: imggeo;
+}
+.ligeo {
+    grid-area: ligeo;
+}
+
+
+
+
 .imagenFooter{
     display: flex;
     justify-content: end;
-}
-.iconosFooter, .ulFooter {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
 }
 
 footer h4{
@@ -170,22 +211,134 @@ footer h4{
 
 /*Estilo del Form Contacto*/
 
-.contacto{
-    font-size: 2.2rem;
-    border-radius: 10px;
-    font-family: "Adam Light";
-    border-width: thin;
+.Formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
 }
 
-/*Estilo del Input Submit*/
+.Formulariodatos{
+    display: flex;
+    margin: 2%;
+    font-size: 3rem;
+    border-radius: 2%;
+    font-family: "Adam Light";
+    border-width: thin;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.Formulariopedido{
+    display: flex;
+    margin: 2%;
+    font-size: 3rem;
+    border-radius: 2%;
+    font-family: "Adam Light";
+    border-width: thin;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.labelaroma, .labelproducto, .labelcantidad {
+    font-family: "Adam Light";
+    font-size: 3rem;
+}
+
+.botonformulario {
+    text-align: end;
+    margin-right: 15%;
+}
 
 .boton{
     background-color: #404041;
     font-family: "Adam Bold";
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: #404041;
-    border-radius: 20px;
-    padding: 10px 15px;
+    padding: 1% 1.5%;
     color: whitesmoke;
+    margin: 2%;
+    border-radius: 15%;
+}
+.boton:hover{
+    background-color: #5e5e5f;
 }
 
+/*Mobile responsive ------------------------------------------------------------ */
+
+@media only screen and (max-width:500px) {
+    header{
+        flex-direction: column;
+        font-size: 1rem;
+        align-items: end;
+    }
+    nav {
+        width: 70%;
+    }
+
+    header img{
+        width: 40%;
+        justify-content: start;
+    }
+    h1 {
+        font-size: 3rem; 
+    }
+    h2 {
+        font-size: 2rem; 
+    }
+    h3 {
+        font-size: 1.5rem; 
+    }
+    body p{
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 2%;
+    }
+    .valores {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "sustentabilidad armonia calma";
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 5%;
+    }
+    .valores img {
+        display: none;
+    }
+    footer{
+        font-size: 1.25rem;    
+    }
+    footer h4{
+        font-size: 1.5rem;
+    }
+    .imagenFooter{
+        display: none
+    }
+    .iconosFooter img{
+        width: 40%;
+    }
+    .iconosFooter, .ulFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center  ;
+}
+footer nav {
+    width: 60%;
+    margin-top: 5%;
+    justify-content: left;
+    text-align: left;
+}
+footer p{
+    font-size: 1rem;
+    text-align: right;
+    padding-bottom: 2%;
+}
+}
