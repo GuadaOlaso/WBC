@@ -1,8 +1,18 @@
 /*Estilo de fuente*/
+@font-face {
+   font-family: "Adam Light";
+   src: url("../Media/Adam/Adam-Light.ttf");
+}
 
 @font-face{
+    font-family: "Adam Bold";
+    src: url("../Media/Adam/Adam-Bold.ttf");
+}
+
+html {
     font-family: "Adam Light";
-    src: url("../Media/Adam/Adam-Light.ttf");
+    color: #404041;
+    font-size: 62.5%;
 }
 
 @font-face{
@@ -32,6 +42,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
 }
 nav{
     width: 40%;
@@ -81,7 +92,7 @@ h3{
 body p{
     font-size: 2.5rem;
     text-align: center;
-    margin: 2%;
+    margin: 3%;
 }
 .imagenBody {
     max-height: 100%;
@@ -131,71 +142,28 @@ body p{
 footer{
     background-color: #C9A88A;
     font-size: 2rem;    
-    margin-bottom: 0%;
-    bottom: 0;
 }
 
 footer ul {
     list-style-type: none;
-}
-footer ul a {
-    color: #404041;
-    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 2%;
+    width: 70%;
 }
 footer p{
     font-size: 2rem;
     text-align: center;
     padding-bottom: 2%;
+    margin-bottom: 0%;
 }
 .imagenFooter img {
     width: 15%;
 }
-.iconosFooter img{
-    width: 15%;
+.ulFooter img{
+    width: 25px;
 }
-footer nav {
-    background-color: aqua;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 50px, 50px, 50px, 50px;
-    grid-template-areas: 
-    "imginstagram liinstagram"
-    "imgmail limail"
-    "imgtel litel"
-    "imggeo ligeo";
-    justify-items: center;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: center;
-}
-
-.imginstagram {
-    grid-area: imginstagram;
-}
-.liinstagram {
-    grid-area: liinstagram;
-}
-.imgmail {
-    grid-area: imgmail;
-}
-.limail {
-    grid-area: limail;
-}
-.imgtel{
-    grid-area: imgtel;
-}
-.litel {
-    grid-area: litel;
-}
-.imggeo {
-    grid-area: imggeo;
-}
-.ligeo {
-    grid-area: ligeo;
-}
-
-
-
 
 .imagenFooter{
     display: flex;
@@ -203,7 +171,7 @@ footer nav {
 }
 
 footer h4{
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: flex;
     padding-top: 2%;
     padding-left: 2%;
@@ -248,6 +216,16 @@ footer h4{
     font-size: 3rem;
 }
 
+input {
+    font-family: "Adam Light";
+    font-size: 2rem;
+}
+
+select {
+    font-family: "Adam Light";
+    font-size: 2rem;
+}
+
 .botonformulario {
     text-align: end;
     margin-right: 15%;
@@ -262,6 +240,7 @@ footer h4{
     color: whitesmoke;
     margin: 2%;
     border-radius: 15%;
+    box-shadow: #323233;
 }
 .boton:hover{
     background-color: #5e5e5f;
@@ -270,19 +249,27 @@ footer h4{
 /*Mobile responsive ------------------------------------------------------------ */
 
 @media only screen and (max-width:500px) {
+
+    /*Estilo de Header Mobile*/
+
     header{
         flex-direction: column;
         font-size: 1rem;
+        padding-bottom: 1%;
         align-items: end;
-    }
-    nav {
-        width: 70%;
+        position: sticky;
     }
 
-    header img{
-        width: 40%;
-        justify-content: start;
+    header img {
+        width: 40%; 
     }
+
+    nav {
+        width: 70%; 
+    }
+
+    /*Estilo de Main Mobile*/
+
     h1 {
         font-size: 3rem; 
     }
@@ -295,7 +282,7 @@ footer h4{
     body p{
         font-size: 1.25rem;
         text-align: center;
-        margin: 2%;
+        padding: 1%;
     }
     .valores {
         display: grid;
@@ -312,6 +299,9 @@ footer h4{
     .valores img {
         display: none;
     }
+
+    /*Estilo de Footer Mobile*/
+
     footer{
         font-size: 1.25rem;    
     }
@@ -321,24 +311,69 @@ footer h4{
     .imagenFooter{
         display: none
     }
-    .iconosFooter img{
-        width: 40%;
+    .ulFooter img{
+        width: 15px;
     }
     .iconosFooter, .ulFooter {
         display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center  ;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 5%;
+        justify-content: space-around;
 }
 footer nav {
-    width: 60%;
     margin-top: 5%;
     justify-content: left;
     text-align: left;
+    margin: 0;
 }
 footer p{
     font-size: 1rem;
     text-align: right;
     padding-bottom: 2%;
+}
+
+/*Estilo del Form Contacto Mobile*/
+
+.Formulario{
+    flex-direction: column;
+    width: 100%;
+    margin: 2%;
+}
+
+.Formulariodatos {
+    font-size: 1.5rem;
+}
+
+.labelaroma, .labelproducto, .labelcantidad {
+    font-family: "Adam Light";
+    font-size: 1.5rem;
+}
+
+input {
+    font-family: "Adam Light";
+    font-size: 1rem;
+}
+
+select {
+    font-family: "Adam Light";
+    font-size: 1rem;
+}
+
+.botonformulario {
+    text-align: center;
+    margin: 2%
+}
+
+.boton{
+    background-color: #404041;
+    font-family: "Adam Bold";
+    font-size: 1.5rem;
+    border: #404041;
+    padding: 1% 1.5%;
+    color: whitesmoke;
+    margin: 2%;
+    border-radius: 15%;
+    box-shadow: #323233;
 }
 }
