@@ -293,14 +293,14 @@ select {
 
     header{
         flex-direction: column;
-        font-size: 1rem;
+        font-size: 2rem;
         padding-bottom: 1%;
         align-items: end;
         position: sticky;
     }
 
     header img {
-        width: 40%; 
+        width: 60%; 
     }
 
     nav {
@@ -313,13 +313,13 @@ select {
         font-size: 3rem; 
     }
     h2 {
-        font-size: 2rem; 
+        font-size: 2.5rem; 
     }
     h3 {
-        font-size: 1.5rem; 
+        font-size: 2rem; 
     }
     body p{
-        font-size: 1.25rem;
+        font-size: 1.75rem;
         text-align: center;
         padding: 1%;
     }
@@ -342,10 +342,10 @@ select {
     /*Estilo de Footer Mobile*/
 
     footer{
-        font-size: 1.25rem;    
+        font-size: 1.5rem;    
     }
     footer h4{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     .imagenFooter{
         display: none
@@ -394,35 +394,35 @@ footer p{
 }   
 
 .Formulariodatos {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
 .labelaroma, .labelproducto {
     font-family: "Adam Light";
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-top: 3%;
     margin-bottom: 3%;
 }   
 
 .labelcantidad {
     font-family: "Adam Light";
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-top: 3%;
 }
 
 
 input {
     font-family: "Adam Light";
-    font-size: 1rem;
+    font-size: 3rem;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
 select {
     font-family: "Adam Light";
-    font-size: 1rem;
+    font-size: 3rem;
 }
 
 .botonformulario {
@@ -434,7 +434,7 @@ select {
 .boton{
     background-color: #404041;
     font-family: "Adam Bold";
-    font-size: 1.5rem;
+    font-size: 3rem;
     border: #404041;
     padding: 10% 15%;
     color: whitesmoke;
