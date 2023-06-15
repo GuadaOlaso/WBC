@@ -94,13 +94,13 @@ h1 {
     font-size: 6rem;
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 h2 {
     font-size: 4rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 h3{
     font-size: 3rem;
@@ -108,7 +108,8 @@ h3{
 body p{
     font-size: 2.5rem;
     text-align: center;
-    margin: 3%;
+    width: 90%;
+    margin-bottom: 3%;
 }
 .imagenBody {
     max-height: 100%;
@@ -469,6 +470,9 @@ select {
         display: none;
     }
 
+    .Sustentabilidad,.Armonia, .Calma {
+        font-size: 2.2rem;
+    }
 
     /*Estilo de Footer Mobile*/
 
@@ -579,7 +583,12 @@ footer p{
 
 .coco, .lavanda, .jazmin, .azahar, .lima {
     flex-direction: column;
-    }
+}
+
+.coco h2, .lavanda h2, .jazmin h2, .azahar h2, .lima h2{
+    margin-top: 3%;
+}    
+
 .lavandaweb, .jazminweb, .azaharweb, .limaweb {
     display: none;
 }
