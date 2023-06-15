@@ -195,66 +195,46 @@ footer h4{
 /*Estilo de Producto*/
 
 .velas {
-    display: flex;
-    flex-direction: row;
     margin: 3%;
+    text-align: center;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 10% 10% 30% 10%;
+    justify-content: space-around;
 }
 
-
-.vidrio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
 
 .vidrio img {
-    width: 31%;
-}
-
-
-.ceramica {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+    width: 40%;
 }
 
 .ceramica img {
-    width: 30%;
+    width: 38%;
 }
 
 .bombondifusor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 3%;
-}
-
-.bombon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    text-align: center;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 10% 10% 30% 10%;
+    justify-content: space-around;
 }
 
 .bombon img {
-    width: 32%;
-}
-
-.difusor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+    width: 40.5%;
 }
 
 .difusor img {
-    width: 30%;
+    width: 38%;
 }
 
 .velas h2, .bombondifusor h2 {
     margin: 3%;
+    font-size: 3rem;
 }
 
 .velas p, .bombondifusor p {
@@ -277,15 +257,51 @@ footer h4{
     font-family: "Adam Bold";
     font-size: 2rem;
     border: #404041;
-    padding: 7% 9%;
+    padding: 3% 5%;
     color: whitesmoke;
     margin: 2%;
     border-radius: 15%;
     box-shadow: #323233;
 }
-.boton:hover{
+.botoncontacto:hover{
     background-color: #5e5e5f;
 }
+
+/*Estilo de Aromas*/
+
+.aromas {
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+.coco img {
+    width: 100%;
+}
+.lavandaweb, .azaharweb, .jazminweb {
+    width: 25%;
+}
+
+.limaweb {
+    width: 30%;
+}
+
+.coco, .lavanda, .jazmin, .azahar, .lima {
+    margin: 3%;
+    text-align: justify;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+
+.cocoteto, .lavandatexto, .jazmintexto, .azahartexto, .limatexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /*Estilo del Form Contacto*/
 
@@ -366,6 +382,10 @@ select {
 
 /*Estilo de Gracias.html*/
 
+.Gracias main {
+    margin: 0%;
+}
+
 .Gracias h2{
     margin: 5%;
     font-size: 5rem;
@@ -374,12 +394,26 @@ select {
     font-size: 3.5rem;
 }
 .Gracias img {
-    height: 10%;
     max-width: 100%;
     margin-right: 0%;
     margin-left: 0%;
     margin-top: 3%;
 }
+
+/*Web responsive (cambios entre mobile y web) ------------------------------------------------------------ */
+
+@media only screen and (min-width:501px) {
+
+.Graciasmobile {
+    display: none;
+}
+
+.lavandamobile, .jazminmobile, .azaharmobile, .limamobile {
+    display: none;
+}
+
+}
+
 /*Mobile responsive ------------------------------------------------------------ */
 
 @media only screen and (max-width:500px) {
@@ -393,51 +427,54 @@ select {
         align-items: end;
         position: sticky;
     }
-
     header img {
-        width: 60%; 
+        width: 50%; 
+        margin-left: 30%;
+        margin-top: 10%;
     }
 
     nav {
-        width: 90%; 
+        width: 95%; 
     }
 
     /*Estilo de Main Mobile*/
 
     h1 {
-        font-size: 3rem; 
+        font-size: 4rem; 
     }
     h2 {
-        font-size: 2.5rem; 
+        font-size: 3rem; 
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
-    h3 {
-        font-size: 2rem; 
-    }
+  
     body p{
-        font-size: 1.75rem;
+        font-size: 2.5rem;
         text-align: center;
-        padding: 1%;
     }
     .valores {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: 1.5fr 1fr;
         grid-template-rows: 100%;
         grid-template-areas: 
         "sustentabilidad armonia calma";
         justify-items: center;
         align-items: center;
-        justify-content: space-evenly;
-        align-content: center;
-        margin: 5%;
+        justify-content: space-between;
+        align-content:center;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     .valores img {
         display: none;
     }
 
+
     /*Estilo de Footer Mobile*/
 
     footer{
         font-size: 1.5rem;    
+        margin-top: 2%;
     }
     footer h4{
         font-size: 1.75rem;
@@ -469,22 +506,18 @@ footer p{
 /*Estilo de Producto Mobile*/
 
 .velas {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 
-.vidrio {
-    width: 100%;
-}
 
 .vidrio img {
     width: 100%;
 }
 
-.ceramica {
-    width: 100%;
-}
 
 .ceramica img {
     width: 100%;
@@ -492,18 +525,14 @@ footer p{
 }
 
 .bombondifusor {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.bombon {
-    width: 100%;
-}
 
 .bombon img {
-    width: 100%;
-}
-
-.difusor {
     width: 100%;
 }
 
@@ -534,9 +563,9 @@ footer p{
 .botoncontacto{
     background-color: #404041;
     font-family: "Adam Bold";
-    font-size: 2rem;
+    font-size: 1.75rem;
     border: #404041;
-    padding: 7% 9%;
+    padding: 3% 5%;
     color: whitesmoke;
     margin: 2%;
     border-radius: 15%;
@@ -546,6 +575,18 @@ footer p{
     background-color: #5e5e5f;
 }
 
+/*Estilo de Producto Mobile*/
+
+.coco, .lavanda, .jazmin, .azahar, .lima {
+    flex-direction: column;
+    }
+.lavandaweb, .jazminweb, .azaharweb, .limaweb {
+    display: none;
+}
+
+.lavandamobile, .jazminmobile, .azaharmobile, .limamobile {
+    width: 100%;
+}
 
 /*Estilo del Form Contacto Mobile*/
 
@@ -628,6 +669,14 @@ select {
 .Gracias p {
     margin: 2%;
     font-size: 2rem;
+}
+
+.Gracias img {
+    margin-bottom: 0;
+}
+
+.Graciasweb {
+    display: none;
 }
 
 }
