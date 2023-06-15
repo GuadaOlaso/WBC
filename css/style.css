@@ -328,7 +328,7 @@ footer h4{
 }
 
 
-.cocoteto, .lavandatexto, .jazmintexto, .azahartexto, .limatexto {
+.cocotexto, .lavandatexto, .jazmintexto, .azahartexto, .limatexto {
     display: flex;
     flex-direction: column;
     justify-content: center;
