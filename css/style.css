@@ -640,6 +640,9 @@ footer p{
     margin-bottom: 3%;
 }
 
+.aromas {
+    margin-top: 5%;
+}
 
 .coco, .lavanda, .jazmin, .azahar, .lima {
     flex-direction: column;
