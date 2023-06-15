@@ -193,6 +193,33 @@ footer h4{
     padding-left: 2%;
 }
 
+/*Estilo de Nosotros*/
+
+.somos, .hacemos {
+    margin: 3%;
+}
+
+.somosp, .hacemosp {
+    text-align: justify;
+}
+
+.nosotros {
+    font-size: 2.2rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+
+.pili, .guada, .clari {
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: justify;
+    background-color:#e6d7c5;
+    padding: 3%;
+}
+
 /*Estilo de Producto*/
 
 .velas {
@@ -307,7 +334,7 @@ footer h4{
 /*Estilo del Form Contacto*/
 
 .mainFormulario {
-    margin: 2%;
+    margin: 3%;
 }
 
 .mainFormulario h1 {
@@ -507,6 +534,27 @@ footer p{
     padding-bottom: 2%;
 }
 
+/*Estilo de Nosotros Mobile*/
+
+.somos {
+    margin: 10%;
+}
+
+.hacemosp  { 
+    margin-bottom: 15%;
+    margin-top: 10%;
+}
+
+.nosotros {
+    flex-direction: column;
+    margin: 5%;
+}
+
+.pili, .guada, .clari {
+    margin: 5%;
+    padding: 5%;
+}
+
 /*Estilo de Producto Mobile*/
 
 .velas {
@@ -604,7 +652,6 @@ footer p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3%;
 }
 
 .mainFormulario h1 {
@@ -614,21 +661,22 @@ footer p{
 
 .Formulario{
     flex-direction: column;
-    width: 100%;
     margin-top: 3%;
     margin-bottom: 3%;
 }   
 
 .Formulariodatos {
-    font-size: 3rem;
+    text-align: center;
+}
+
+.Formulariopedido {
     text-align: center;
 }
 
 
+
 .labelaroma, .labelproducto {
     font-family: "Adam Light";
-    font-size: 3rem;
-
     text-align: center;
 }   
 
