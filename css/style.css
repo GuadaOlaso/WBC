@@ -38,6 +38,7 @@ body {
     flex-direction: column;
     min-height: 100%;
     background-color: #efeae4;
+    font-family: "Adam Light";
 }
 
 footer{
@@ -340,12 +341,8 @@ footer h4{
 /*Estilo del Form Contacto*/
 
 .mainFormulario {
-    margin: 3%;
-}
-
-.mainFormulario h1 {
-    margin-bottom: 5%;
-    font-size: 4rem;
+    font-size: 6rem;
+    font-family: "Adam Bold";
 }
 .Formulario{
     display: flex;
@@ -358,46 +355,71 @@ footer h4{
 
 .Formulariodatos{
     display: flex;
-    margin: 5%;
-    font-size: 2.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2rem;
     border-radius: 2%;
     font-family: "Adam Light";
     border-width: thin;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: left;
+    padding: 0%;
+    width: 50%;
 }
 
 .Formulariopedido{
     display: flex;
-    margin: 5%;
-    font-size: 2.5rem;
-    border-radius: 2%;
+    font-size: 2rem;
     font-family: "Adam Light";
     border-width: thin;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: left;
+    padding: 0%;
+    width: 50%;
+    margin-right: 5%;
 }
 
 .labelaroma, .labelproducto, .labelcantidad {
     font-family: "Adam Light";
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    
 }
 
 input {
     font-family: "Adam Light";
     font-size: 2rem;
+    width: 100%;
+    border-color: none;
 }
 
 select {
     font-family: "Adam Light";
     font-size: 2rem;
+    width: 100%;
+    border-color: none;
+}
+button {
+    background-color: #404041;
+    font-family: "Adam Bold";
+    font-size: 1.5rem;
+    border: #404041;
+    padding: 3% 5%;
+    color: whitesmoke;
+    margin: 2%;
+    border-radius: 15%;
+    box-shadow: #323233;
+    margin-bottom: 6%;
+}
+button:hover{
+    background-color: #5e5e5f;
 }
 
-.botonformulario {
-    text-align: end
-}
+/*Estilo de Boton*/
 
 .boton{
     background-color: #404041;
@@ -639,7 +661,7 @@ footer p{
     margin-top: 10%; 
     margin-bottom: 3%;
 }
-1
+
 .aromas {
     margin-top: 10%; 
 }
@@ -660,65 +682,8 @@ footer p{
     width: 100%;
 }
 
-/*Estilo del Form Contacto Mobile*/
+/*Estilo del boton*/
 
-.mainFormulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainFormulario h1 {
-    margin-top: 10%; 
-    margin-bottom: 3%;
-}
-
-.Formulario{
-    flex-direction: column;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}   
-
-.Formulariodatos {
-    text-align: center;
-}
-
-.Formulariopedido {
-    text-align: center;
-}
-
-
-
-.labelaroma, .labelproducto {
-    font-family: "Adam Light";
-    text-align: center;
-}   
-
-.labelcantidad {
-    font-family: "Adam Light";
-    font-size: 3rem;
-    margin-top: 3%;
-    text-align: center;
-}
-
-
-input {
-    font-family: "Adam Light";
-    font-size: 3rem;
-    text-align: center;
-}
-
-select {
-    font-family: "Adam Light";
-    font-size: 3rem;
-    text-align: center;
-}
-
-.botonformulario {
-    text-align: center;
-    margin: 2%;
-}
 
 .boton{
     background-color: #404041;

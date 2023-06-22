@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -31,45 +33,50 @@
             </ul>
         </nav> 
 </header>
-<main class="mainFormulario">
-    <h1>Hace tu pedido</h1>
+<main>
+    <h1 class=".mainFormulario">Hace tu pedido</h1>
 
     <form action="Gracias.html" method="post">
         <div class="Formulario">
         <div class="Formulariodatos">
-            <label class="labelnombre" for="">Nombre y Apellido</label>
-                <input required class="imputnoombre" type="text" name="Nombre y Apellido" id="Nombre y Apellido" placeholder="Luz Gomez">
-            <label class="labelmail" for="">E-Mail</label>
-                <input required class="imputmail" type="email" name="Mail" id="Mail" placeholder="luzgomez@gmail.com">
-            <label class="labeltelefono" for="">Telefono</label>
-                <input required class="imputtelefono" type="tel" name="Teléfono" id="Teléfono" placeholder="011 15 1111 1111">
-        </div>     
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputTelefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="exampleInputPassword1">
+              </div>
+        </div>  
         <div class="Formulariopedido">   
-            <label class="labelproducto" for="">Producto</label>
-                <select required class="selectproducto" name="" id="">   
-                    <option value="vela vidrio">Vela en Vaso de Vidrio</option>
-                    <option value="vela ceramica">Vela en Vaso de Ceramica</option>
-                    <option value="bombon">Bombon Aromatico</option>
-                    <option value="difusor">Difusor de Ambiente</option>
-                </select>
-            <label class="labelaroma" for="">Aroma</label>
-                <select required class="selectaroma" name="" id="">
-                    <option value="1">#1 Coco y Vainilla</option>
-                    <option value="2">#2 Lavanda y Romero</option>
-                    <option value="3">#3 Jazmines y Nardos</option>
-                    <option value="4">#4 Flor de Azahar y Lirio</option>
-                    <option value="5">#5 Lima y Vainilla</option>
-                </select>
-            <label class="labelcantidad" for="">Cantidad</label>
-                <input required class="imputcantidad" type="number" name="Cantidad" id="Cantiad" placeholder="1">
-        </div>
-        </div> 
-        <div class="botonformulario">
+              <select class="labelproducto" aria-label="Default select example">
+                <option selected>Producto</option>
+                <option value="1">Vela en Vaso de Vidrio</option>
+                <option value="2">Vela en Vaso de Ceramica</option>
+                <option value="3">Bombon Aromatico</option>
+                <option value="4">Difusor de Ambiente</option>
+              </select>   
+              <select class="labelaroma" aria-label="Default select example">
+                <option selected>Aroma</option>
+                <option value="1">#1 Coco y Vainilla</option>
+                <option value="2">#2 Lavanda y Romero</option>
+                <option value="3">#3 Jazmines y Nardos</option>
+                <option value="4">#4 Flor de Azahar y Lirio</option>
+                <option value="5">#5 Lima y Vainilla</option>
+              </select>   
+              <div class="labelcantidad">
+                <label for="exampleInputCantidad" >Cantidad</label>
+                <input class="imputcantidad" type="number" class="form-control" id="exampleInputPassword1">
+              </div>
+        </div>   
+        </div>    
             <a href="Gracias.html">
-                <input class="boton" type="submit" value="Enviar">
+                <button type="submit" class=".boton">Realizar Pedido</button>   
             </a>
-        </div>
-        </div>
     </form>
 </main>
 <footer>
@@ -105,5 +112,7 @@
     </div>
     <p class="Copyright">© 2023 Todos los derechos reservados.</p>
 </footer>
+<!-- BS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
